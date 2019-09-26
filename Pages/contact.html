@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <!-- NOTE: Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top px-5">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item px-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Solution
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Solution 1</a>
+                            <a class="dropdown-item" href="#">Solution 2</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item px-2 active">
+                        <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-us py-5">
+        <div class="overlay"></div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-12 text-center py-5">
+                    <h2 class="section-title">CONTACT US</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOTE: Contact Form -->
+    <section class=" py-5">
+        <div class="container">
+            <p class="section-sub-title text-center">HAVE ANY QUESTIONS?</p>
+            <br>
+            <p class="text-center">Our primary concern is dealing with our customers and making sure that they are
+                satisfied. Any
+                questions, comments, or concerns you may have are very important to us</p>
+            <div class="contact-form mt-5">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Your Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="btn-container text-center mt-3">
+                        <button type="button" class="btn btn-dark btn-raised">
+                            SEND
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="map py-5">
+        <div class="container">
+            <p class="section-sub-title text-center">MEET US</p>
+            <div id="googleMap" class="mt-5" style="width:100%;height:400px;"></div>
+            <script>
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(51.508742, -0.120850),
+                        zoom: 5,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- NOTE: Footer -->
+    <footer class="footer pt-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-phone icon"></i>
+                    <p>
+                        Phone : (+91) 8000078216
+                    </p>
+                    <p>
+                        Phone : (+91) 8141422244
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-envelope icon"></i>
+                    <p>
+                        varun@gloryfab.com
+                    </p>
+                    <p>
+                        harshit@gloryfab.com
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-map-marked-alt icon"></i>
+                    <p>
+                        Plot No. 201, Road No. 2, G.I.D.C. Sachin
+                    </p>
+                    <p>
+                        Surat - 394230 (Gujarat) India
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="m-0">© 2018, All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="social-icon m-0">
+                            <li class="facebook mx-2">
+                                <i class="fab fa-facebook-f icon"></i>
+                            </li>
+                            <li class="twitter mx-2">
+                                <i class="fab fa-twitter icon"></i>
+                            </li>
+                            <li class="linked mx-2">
+                                <i class="fab fa-linkedin-in icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+
+</html>

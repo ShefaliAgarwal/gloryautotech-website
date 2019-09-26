@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Raleway');
+
+main {
+    padding: 0;
+    margin: 0;
+    color: #757575;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+/* NOTE: button */
+.btn-container .btn {
+    display: inline-block;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+.btn-container .btn:focus {
+    box-shadow: none;
+}
+
+.btn-container .btn-raised {
+    padding: 5px 16px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-container .btn-raised:focus {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* NOTE: icons */
+.icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* NOTE: overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(52, 58, 64, 0.56);
+}
+
+/* NOTE: navbar */
+
+/* NOTE: carousel */
+#demo.carousel .carousel-item {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#demo.carousel .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#demo.carousel .carousel-caption .section-title,
+.carousel .carousel-caption .section-sub-title {
+    color: #fff;
+}
+
+/* NOTE: section */
+
+section .section-title {
+    font-family: 'Righteous', cursive;
+    color: #343a40;
+    display: block;
+    font-size: 60px;
+}
+
+.navbar-dark .navbar-brand {
+    font-family: 'Righteous', cursive;
+}
+
+section .section-sub-title {
+    /* text-transform: uppercase; */
+    color: #343a40;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    section .section-title {
+        font-size: 40px;
+    }
+}
+
+/* about us */
+
+.about {
+    background-image: url(../image/about/slide6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.about .section-title,
+.about .section-sub-title {
+    color: #fff;
+}
+
+.team-member,
+.team-member .team-img {
+    position: relative;
+}
+
+.team-member {
+    overflow: hidden;
+}
+
+.team-member,
+.team-member .team-img {
+    position: relative;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(52, 58, 64, 0.56);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+
+.desk,
+.desk h4,
+.team-hover .s-link a {
+    text-align: center;
+    color: #fff;
+}
+
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+
+.team-member:hover .team-hover,
+.team-member:hover .team-hover .desk,
+.team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+
+.desk,
+.desk h4,
+.team-hover .s-link a {
+    text-align: center;
+    color: #fff;
+}
+
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+}
+
+#testimonial {
+    height: 200px;
+    padding: 50px;
+    background: rgba(52, 58, 64, 0.59);
+    color: #fff;
+}
+
+#testimonial .carousel-indicators {
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    #testimonial {
+        height: 100%;
+    }
+}
+
+/* NOTE: num count */
+
+.num-count-number {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+/* solution - 1 */
+.solution {
+    background-image: url(../image/solutions/rawpixel-659503-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.solution .section-title,
+.solution .section-sub-title,
+.parallax-content p {
+    color: #fff;
+}
+
+.solution-1 .solution-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(52, 58, 64);
+    color: rgb(52, 58, 64);
+    width: 100%;
+    height: 100%;
+}
+
+.solution-parallax {
+    background-image: url(../image/solutions/business-solutions.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-content {
+    background-color: rgba(52, 58, 64, 0.56);
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* NOTE: contact us */
+
+.contact-us {
+    background-image: url(../image/contact/bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.contact-us .section-title,
+.contact-us .section-sub-title {
+    color: #fff;
+}
+
+.contact-form {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    resize: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .contact-form {
+        width: 100%;
+    }
+}
+
+/* NOTE: footer */
+
+.footer {
+    color: #fff;
+}
+
+.footer .social-icon {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.footer .social-icon .icon {
+    font-size: 20px;
+}
